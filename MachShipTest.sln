@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MachShip", "MachShip\MachShip.csproj", "{8ED9E06F-CEC9-4273-8B76-E543330C0F17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTree", "BinaryTree\BinaryTree.csproj", "{1CE9891A-B5AE-4454-84A9-8543C1868939}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTreeTests", "BinaryTreeTests\BinaryTreeTests.csproj", "{7635F78A-CE4D-432D-BAEE-817706690060}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8ED9E06F-CEC9-4273-8B76-E543330C0F17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ED9E06F-CEC9-4273-8B76-E543330C0F17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ED9E06F-CEC9-4273-8B76-E543330C0F17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ED9E06F-CEC9-4273-8B76-E543330C0F17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CE9891A-B5AE-4454-84A9-8543C1868939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CE9891A-B5AE-4454-84A9-8543C1868939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CE9891A-B5AE-4454-84A9-8543C1868939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CE9891A-B5AE-4454-84A9-8543C1868939}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7635F78A-CE4D-432D-BAEE-817706690060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7635F78A-CE4D-432D-BAEE-817706690060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7635F78A-CE4D-432D-BAEE-817706690060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7635F78A-CE4D-432D-BAEE-817706690060}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
