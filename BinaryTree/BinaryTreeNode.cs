@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace BinaryTree
-{ 
+{
 
     public class BinaryTreeNode<TNode> : IComparable<TNode>
         where TNode : IComparable<TNode>
@@ -21,7 +21,7 @@ namespace BinaryTree
         public BinaryTreeNode<TNode> Right { get; set; }
         public TNode Value { get; private set; }
         public int Id { get; set; }
-        
+
         public int CompareTo(TNode other)
         {
             return Value.CompareTo(other);

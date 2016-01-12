@@ -7,7 +7,7 @@ namespace BinaryTree
            where T : IComparable<T>
     {
         private BinaryTreeNode<T> _head;
-       
+
 
 
         public BinaryTreeNode<T> Head
@@ -23,15 +23,15 @@ namespace BinaryTree
         }
 
 
-       
+
         public bool Contains(T value)
         {
-            
+
             BinaryTreeNode<T> parent;
             return FindWithParent(value, out parent) != null;
         }
 
-        
+
         private BinaryTreeNode<T> FindWithParent(T value, out BinaryTreeNode<T> parent)
         {
             BinaryTreeNode<T> current = _head;
@@ -80,7 +80,7 @@ namespace BinaryTree
             }
         }
 
-        
+
         public void PostOrderTraversal(Action<T> action)
         {
             PostOrderTraversal(action, _head);
@@ -96,7 +96,7 @@ namespace BinaryTree
             }
         }
 
-       
+
         public void InOrderTraversal(Action<T> action)
         {
             InOrderTraversal(action, _head);
@@ -115,24 +115,24 @@ namespace BinaryTree
         }
 
 
-      
+
         public IEnumerator<T> InOrderTraversal()
         {
-           if (_head != null)
+            if (_head != null)
             {
                 Stack<BinaryTreeNode<T>> stack = new Stack<BinaryTreeNode<T>>();
 
                 BinaryTreeNode<T> current = _head;
 
-               bool goLeftNext = true;
-              
+                bool goLeftNext = true;
+
                 stack.Push(current);
 
                 while (stack.Count > 0)
                 {
                     if (goLeftNext)
                     {
-                       while (current.Left != null)
+                        while (current.Left != null)
                         {
                             stack.Push(current);
                             current = current.Left;
@@ -141,16 +141,16 @@ namespace BinaryTree
 
                     // in-order is left->yield->right
                     yield return current.Value;
-                   
+
                     if (current.Right != null)
                     {
                         current = current.Right;
-                        
+
                         goLeftNext = true;
                     }
                     else
                     {
-                       current = stack.Pop();
+                        current = stack.Pop();
                         goLeftNext = false;
                     }
                 }
@@ -159,35 +159,35 @@ namespace BinaryTree
 
 
 
-        public IEnumerable<BinaryTreeNode<T>> InOrderTraversalSerchById(int serchId)
+        public IEnumerable<BinaryTreeNode<T>> SerchById(int serchId)
         {
-           if (_head != null)
+            if (_head != null)
             {
                 Stack<BinaryTreeNode<T>> stack = new Stack<BinaryTreeNode<T>>();
 
                 BinaryTreeNode<T> current = _head;
-                
+
                 bool goLeftNext = true;
-              
+
                 stack.Push(current);
 
                 while (stack.Count > 0)
                 {
                     if (goLeftNext)
                     {
-                       
+
                         while (current.Left != null)
                         {
                             stack.Push(current);
                             current = current.Left;
                         }
                     }
-                   
+
                     if (current.Id == serchId)
                     {
                         yield return current;
                     }
-                    
+
                     if (current.Right != null)
                     {
                         current = current.Right;
@@ -203,7 +203,7 @@ namespace BinaryTree
         }
 
 
-       public IEnumerator<T> GetEnumerator()
+        public IEnumerator<T> GetEnumerator()
         {
             return InOrderTraversal();
         }
@@ -214,7 +214,7 @@ namespace BinaryTree
         }
 
 
-           public void Clear()
+        public void Clear()
         {
             _head = null;
             //_count = 0;

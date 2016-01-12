@@ -31,7 +31,6 @@ namespace BinaryTreeTests
         }
 
 
-
         [Test]
         public void InOrder_Enumerator()
         {

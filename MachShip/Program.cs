@@ -11,10 +11,10 @@ namespace MachShip
     {
         static void Main(string[] args)
         {
-        
-        string searchItem;
-        List<string> foundNodes;
-        BinaryTree<int> tree = new BinaryTree<int>();
+
+            string searchItem;
+            List<string> foundNodes;
+            BinaryTree<int> tree = new BinaryTree<int>();
 
             tree.Head = new BinaryTreeNode<int>(2);
             tree.Head.Left = new BinaryTreeNode<int>(7);
@@ -32,7 +32,7 @@ namespace MachShip
 
             Console.WriteLine("");
             Console.WriteLine("--------------------------------------");
-            tree.InOrderTraversal(delegate(int i) { Console.Write(i + " | "); });
+            tree.InOrderTraversal(delegate (int i) { Console.Write(i + " | "); });
 
             Console.WriteLine("");
             Console.WriteLine("--------------------------------------");
@@ -40,8 +40,8 @@ namespace MachShip
 
 
             Console.Write("Please enter the node Id to search : ");
-           //searchItem =  Console.ReadLine();
-            
+            //searchItem =  Console.ReadLine();
+
 
             while (true)
             {

@@ -213,14 +213,14 @@ namespace BinaryTreeTests
 
             int serchId = 11;
 
-            var resultSet = tree.InOrderTraversalSerchById(serchId);
+            var resultSet = tree.SerchById(serchId);
             Assert.AreEqual(0, resultSet.Count(), "Result size should be 0");
             System.Diagnostics.Debug.WriteLine(resultSet.Count());
 
 
             serchId = 105;
 
-            resultSet = tree.InOrderTraversalSerchById(serchId);
+            resultSet = tree.SerchById(serchId);
             Assert.AreEqual(1, resultSet.Count(), "Result size should return only one result");
             System.Diagnostics.Debug.WriteLine(resultSet.Count());
 
